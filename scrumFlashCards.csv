@@ -1,0 +1,97 @@
+Question|Answer
+What is scrum?|"Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems"
+Is scrum providing detailed instructions?|No, the rules of Scrum guide the teams relationships and interactions
+What is scrum founded on?|Empiricism and lean thinking
+What is Empiricism?|Empiricism asserts that knowledge comes from experience and making decisions based on what is observed
+What is lean thinking?|Lean thinking reduces waste and focuses on the essentials
+What is the 3 pilars of Scrum?|Transparency, inspection, and adaptation
+What is inspection in Scrum?|The Scrum artifacts and the progress toward agreed goals must be inspected frequently and diligently to detect potentially undesirable variances or problems.
+What is transparency in Scrum?|The emergent process and work must be visible to those performing the work as well as those receiving the work.
+What is adaptation in Scrum?|If any aspects of a process deviate outside acceptable limits or if the resulting product is unacceptable, the process being applied or the materials being produced must be adjusted. The adjustment must be made as soon as possible to minimize further deviation.
+What does transparency enable?|Transparency enables inspection. Inspection without transparency is misleading and wasteful.
+What does inspection enable?|Inspection enables adaptation. Inspection without adaptation is considered pointless.
+What are the 5 scrum values?|Commitment, Focus, Openness, Respect, and Courage
+What is commitment in a scrum team?|The Scrum Team commits to achieving its goals and to supporting each other
+What is focusin a scrum team?|Their primary focus is on the work of the Sprint to make the best possible progress toward these goals
+What is openness in a scrum team?|The Scrum Team and its stakeholders are open about the work and the challenges.
+What is respect in a scrum team?|Scrum Team members respect each other to be capable, independent people, and are respected as such by the people with whom they work
+What is courage in a scrum team?|The Scrum Team members have the courage to do the right thing, to work on tough problems.
+What does the scrum values give the team?|Direction, with regard to their work, actions, and behavior
+What does a scrum team consists of?|one Scrum Master, one Product Owner, and Developers.
+What are scrum teams?|"Cross-functional, meaning the members have all the skills necessary to create value
+each Sprint. They are also self-managing, meaning they internally decide who does what, when, and
+how"
+How big is a scrum team?|"Small enough to remain nimble and large enough to complete significant work within a Sprint, typically 10 or fewer people."
+What is the scrum team responsible for?|"All product-related activities. 
+stakeholder collaboration,
+verification, maintenance, operation, experimentation, research and development, and anything else
+that might be required"
+What is the entire scrum team acountabel for?|Creating a valuable, useful Increment every Sprint
+What is the three accountabilites scrum defines with in a team?|the Developers, the Product Owner, and the Scrum Master.
+What are developers?|"Developers are the people in the Scrum Team that are committed to creating any aspect of a usable
+Increment each Sprint."
+What are the devellopers accountable for?|"● Creating a plan for the Sprint, the Sprint Backlog;
+● Instilling quality by adhering to a Definition of Done;
+● Adapting their plan each day toward the Sprint Goal;
+● Holding each other accountable as professionals."
+What is the product owner?|"The Product Owner is one person, not a committee. The Product Owner may represent the needs of
+many stakeholders in the Product Backlog."
+What is the prioduct owner accountable for?|"Maximizing value, Product goal, PBI's, Product backlog
+● Maximizing the value of the product resulting from the work of the Scrum Team
+● Developing and explicitly communicating the Product Goal;
+● Creating and clearly communicating Product Backlog items;
+● Ordering Product Backlog items; and,
+● Ensuring that the Product Backlog is transparent, visible and understood."
+How can change the product backlog?|The product owner, those wanting to change the Product Backlog can do so by trying to convince the Product Owner
+What is the scum master acountabel for?|The Scrum Team’s effectiveness. They do this by enabling the Scrum Team to improve its practices, within the Scrum framework.
+What are the 5 evnets of scrum?|The sprint, Sprint planning, Daily scrum, Sprint review, Sprint retorspective
+What is the lenght of a sprint?|Short enough that the the sprint goal dosnet become invalid, max one month
+When does a sprint start?|Immediately after the conclusion of the previous Sprint.
+Can a sprint be cancelled?|If the sprint goal becomes obsolete(forældet) 
+Who can cancelle a sprint?|Only the Product Owner has the authority to cancel the Sprint. 
+What happends during sprint planing?|The why, what and how of the sprint
+Who attends the sprint planning?|The scrum team, other people may attend to provide advice
+What is the why of sprint planning?|"Why is this Sprint valuable
+The Product Owner proposes how the product could increase its value and utility in the current Sprint.
+The whole Scrum Team then collaborates to define a Sprint Goal that communicates why the Sprint is
+valuable to stakeholders. The Sprint Goal must be finalized prior to the end of Sprint Planning.
+"
+What is the what of sprint planning?|"What can be Done this Sprint
+Through discussion with the Product Owner, the Developers select items from the Product Backlog to
+include in the current Sprint."
+What is the how of sprint planning?|"How will the chosen work get done - SBI's
+For each selected Product Backlog item, the Developers plan the work necessary to create an Increment
+that meets the Definition of Done.
+How this is done is at the sole discretion of the Developers. No one else tells them how to turn Product Backlog items into Increments of value."
+What does the sprint backlog contain?|The Sprint Goal, the PBI's selected for the Sprint, plus the plan for delivering them SBI's
+How long is the sprint planing|Its timeboxed to a maximum of eight hours for a one-month Sprint, for shorter sprint the event is usaaly shorter
+What is the purpose of the daliy scrum?|"The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint
+Backlog as necessary, adjusting the upcoming planned work."
+How long is daly scrum?|15 miniuts
+When and where is daily scrum?|The same place and time every working day of the sprint, to reduce complexity
+Who attend the daily scrum?|The developers. If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate as Developers.
+What is the structure of the daily scrum?|The Developers can select whatever structure and techniques they want, as long as their Daily Scrum focuses on progress toward the Sprint Goal and produces an actionable plan for the next day of work.
+What does the daily scrum do?|improve communications, identify impediments, promote quick decision-making
+What is the purpose of the sprint review?|"To inspect the outcome of the Sprint and determine future adaptations of the product backlog.
+Adapt where the product is headed"
+How long is the sprint review?|Its timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
+Who attend the sprint review?|The scrun team, pottentialy stake holders
+What is the purpose of the sprint retrospective?|"Inspect and adapat everything thats not the product
+The Scrum Team inspects how the last Sprint went with regards to individuals, interactions, processes, tools, and their Definition of Done.
+The Scrum Team identifies the most helpful changes to improve its effectiveness."
+How long is the sprint retrospective?|It is timeboxed to a maximum of three hours for a onemonth Sprint. For shorter Sprints, the event is usually shorter.
+What are the 3 scrum artifacts?|The product backlog, the sprint backlog and the increment
+What is the Product backlogs commitment?|The product goal
+What is the Sprint backlogs commitment?|The sprint goal
+What is the Increments commitment?|The DOD
+What does scrum artifacts represent?|Work or value
+What is the scrum artifacts purpose?|To maximize transparancy of key information and reinforce empiricism
+What is the product backlog?|An ordered list of what is needed to improve the product. It is the single source of work undertaken by the Scrum Team. 
+What is product backlog refinement?|An ongoing activity, where PBI'S are broken down and refined into smaller more precise items, so the scrum team feel comfortable taking them on in a sprint
+What is the product goal?|The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against.
+Can you switch product goal?|The scrum team must fulfill (or abandon) one objective before taking on the next.
+What is the sprint backlog?|The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal. It should have enough detail that they can inspect their progress in the Daily Scrum.
+What is the sprint goal?|The Sprint Goal is the single objective for the Sprint. Although the Sprint Goal is a commitment by the Developers, it provides flexibility in terms of the exact work needed to achieve it.
+What is an increment?|An Increment is a concrete stepping stone toward the Product Goal.
+When is an increment born?|When a PBI meets the DOD
+What is the DOD?|The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product. 
