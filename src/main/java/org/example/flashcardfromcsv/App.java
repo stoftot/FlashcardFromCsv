@@ -3,10 +3,10 @@ package org.example.flashcardfromcsv;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -30,8 +30,12 @@ public class App extends Application {
     private TextArea answerArea;
     private Button nextButton;
     private Button restartButton;
+    private ToggleButton loopButton;
+    private Button desselectAllButton;
     private Label progressLabel;
+    private VBox mainContent;
     private final static int FONT_SIZE = 20;
+    private boolean showingAnswer = false;
 
     @Override
     public void start(Stage primaryStage) {
@@ -39,7 +43,7 @@ public class App extends Application {
 
         Button loadButton = new Button("Load CSV");
         loadButton.setOnAction(e -> loadCSV(primaryStage));
-
+        
         questionArea = new TextArea("Question will appear here");
         questionArea.setFont(new Font("Arial", FONT_SIZE));
         questionArea.setWrapText(true);
@@ -66,14 +70,22 @@ public class App extends Application {
         restartButton.setOnAction(e -> restart());
         restartButton.setDisable(true);
         restartButton.setFont(new Font("Arial", FONT_SIZE));
-
+        
+        desselectAllButton = new Button("Deselect All");
+        desselectAllButton.setOnAction(e -> {
+            mainContent.requestFocus();
+        });
+        
+        loopButton = new ToggleButton("Loop");
+        loopButton.setFont(new Font("Arial", FONT_SIZE));
+        
         progressLabel = new Label("Card 1 of 10");
         progressLabel.setFont(new Font("Arial", 14));
 
         HBox topHBox = new HBox();
         topHBox.setPadding(new Insets(10));
         topHBox.setAlignment(Pos.CENTER); // Aligns content to the right
-        topHBox.getChildren().addAll(loadButton, showAnswerButton, nextButton);
+        topHBox.getChildren().addAll(loadButton, showAnswerButton, nextButton, loopButton, desselectAllButton);
 
 //        VBox layout = new VBox(10);
 //        layout.getChildren().addAll(loadButton, questionArea, showAnswerButton, answerArea, nextButton, restartButton);
@@ -82,7 +94,7 @@ public class App extends Application {
         root.setTop(topHBox);
 
         // Create a VBox for the main content
-        VBox mainContent = new VBox(10);
+        mainContent = new VBox(10);
         mainContent.setPadding(new Insets(10));
         mainContent.setAlignment(Pos.CENTER);
         mainContent.getChildren().addAll(
@@ -90,6 +102,18 @@ public class App extends Application {
                 answerArea,
                 restartButton
         );
+        
+        mainContent.setOnKeyTyped(e -> {
+            if(e.getCharacter().equals(" ")) {
+                if(showingAnswer) {
+                    showNextCard();
+                    showingAnswer = false;
+                } else {
+                    showAnswer();
+                    showingAnswer = true;
+                }
+            }
+        });
 
         root.setCenter(mainContent);
 
@@ -168,10 +192,14 @@ public class App extends Application {
         if (currentCardIndex < flashCards.size()) {
             showCard();
         } else {
-            questionArea.setText("You've completed all flashcards!");
-            answerArea.setText("");
-            showAnswerButton.setDisable(true);
-            nextButton.setDisable(true);
+            if (loopButton.isSelected()) {
+                restart();
+            } else {
+                questionArea.setText("You've completed all flashcards!");
+                answerArea.setText("");
+                showAnswerButton.setDisable(true);
+                nextButton.setDisable(true);
+            }
         }
     }
 
@@ -181,6 +209,28 @@ public class App extends Application {
         showAnswerButton.setDisable(false);
         nextButton.setDisable(false);
         showCard();
+    }
+
+    private void recurseClear(Node node) {
+        if (node instanceof ListView<?>) {
+            ((ListView<?>) node).getSelectionModel().clearSelection();
+        } else if (node instanceof TableView<?>) {
+            ((TableView<?>) node).getSelectionModel().clearSelection();
+        } else if (node instanceof ComboBox<?>) {
+            ((ComboBox<?>) node).getSelectionModel().clearSelection();
+        } else if (node instanceof ChoiceBox<?>) {
+            ((ChoiceBox<?>) node).getSelectionModel().clearSelection();
+        } else if (node instanceof DatePicker) {
+            ((DatePicker) node).setValue(null);
+        } else if (node instanceof CheckBox) {
+            ((CheckBox) node).setSelected(false);
+        } else if (node instanceof RadioButton) {
+            ((RadioButton) node).setSelected(false);
+        } else if (node instanceof Parent) {
+            for (Node child : ((Parent) node).getChildrenUnmodifiable()) {
+                recurseClear(child);
+            }
+        }
     }
 
     public static void main(String[] args) {
